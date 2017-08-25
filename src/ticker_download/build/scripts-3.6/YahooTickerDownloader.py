@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/root/anaconda3/bin/python
 
 import pickle
 from time import sleep
@@ -13,18 +13,11 @@ from ytd.downloader.MutualFundDownloader import MutualFundDownloader
 from ytd.downloader.CurrencyDownloader import CurrencyDownloader
 from ytd.compat import text
 from ytd.compat import csv
-from collections import namedtuple
-
 
 import tablib
 
 import sys
 
-class Struct:
-    def __init__(self, **entries):
-        self.__dict__.update(entries)
-
-        
 options = {
     "stocks": StockDownloader(),
     "etf": ETFDownloader(),
@@ -32,16 +25,6 @@ options = {
     "index": IndexDownloader(),
     "mutualfund": MutualFundDownloader(),
     "currency": CurrencyDownloader(),
-}
-
-argument_parameter = {
-    "insecure":"",
-    "export" : "",
-    "type" : "all",
-    "market" : "",
-    "sleep" : 1,
-    "pandantic" : "",
-    "Exchange" : "",
 }
 
 DATA_PATH = "../../data/"
@@ -85,15 +68,26 @@ def downloadEverything(downloader, tickerType, insecure, sleeptime, pandantic, m
         if not downloader.isDone():
             sleep(sleeptime)  # So we don't overload the server.
 
-
-def execute(args):
+def main():
     downloader = None
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-i", "--insecure", help="use HTTP instead of HTTPS", action="store_true")
+    parser.add_argument("-e", "--export", help="export immediately without downloading (Only useful if you already downloaded something to the .pickle file)", action="store_true")
+    parser.add_argument('-E', '--Exchange', help='Only export ticker symbols from this exchange (the filtering is done during the export phase)')
+    parser.add_argument('type', help='The type to download, this can be: '+" ".join(list(options.keys())))
+    parser.add_argument("-s", "--sleep", help="The time to sleep in seconds between requests", type=float, default=0)
+    parser.add_argument("-p", "--pandantic", help="Stop and warn the user if some rare assertion fails", action="store_true")
+    parser.add_argument("-m", "--market", help="Specify the Region of queried exchanges (us = USA+Canada, dr=Germany, fr=France, hk=Hongkong, gb=United Kingdom, default= all)", default="all")
+
+    args = parser.parse_args()
+
     if args.insecure:
         print("Using insecure connection")
 
     if args.export:
         print("Exporting pickle file")
-    print(args.type)
+
     tickerType = args.type = args.type.lower()
 
     market = args.market = args.market.lower()
@@ -149,28 +143,21 @@ def execute(args):
             elif (symbol.exchange == args.Exchange):
                 data.append(symbol.getRow())
 
-        with io.open(DATA_PATH + downloader.type + '.csv', 'w', encoding='utf-8') as f:
+        with io.open(downloader.type + '.csv', 'w', encoding='utf-8') as f:
             f.write(text.join(u',', data.headers) + '\n')
             writer = csv.writer(f)
             for i in range(0, len(data)):
                 row = [text(y) if not y is None else u"" for y in data[i]]
                 writer.writerow(row)
 
-        with open(DATA_PATH + downloader.type + '.xlsx', 'wb') as f:
+        with open(downloader.type + '.xlsx', 'wb') as f:
             f.write(data.xlsx)
 
-        with open(DATA_PATH + downloader.type + '.json', 'wb') as f:
+        with open(downloader.type + '.json', 'wb') as f:
             f.write(data.json.encode('UTF-8'))
 
-        with open(DATA_PATH + downloader.type + '.yaml', 'wb') as f:
-            f.write(data.yaml.encode('UTF-8'))    
-
-def main():
-    args = argument_parameter.copy()
-    if args["type"] == "all":
-        for item in options:
-            args["type"] = item;
-            execute(Struct(**args))
+        with open(downloader.type + '.yaml', 'wb') as f:
+            f.write(data.yaml.encode('UTF-8'))
 
 if __name__ == "__main__":
     main()
