@@ -1,8 +1,8 @@
-import talib
+#import talib
 import numpy as np
 import pickle
 from pathlib import Path
-from yahoo_finance import Share
+#from yahoo_finance import Share
 import quandl
 import os
 import pandas as pd

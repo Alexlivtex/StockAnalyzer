@@ -1,5 +1,4 @@
-README.rst
-YahooTickerDownloader.py
+TickerDownloader.py
 setup.py
 Yahoo_ticker_downloader.egg-info/PKG-INFO
 Yahoo_ticker_downloader.egg-info/SOURCES.txt
