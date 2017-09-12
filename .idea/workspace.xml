@@ -1,14 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97d53a37-d6ad-41ce-be00-5c72868723b9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_processing/Data_processing.py" afterPath="$PROJECT_DIR$/src/data_processing/Data_processing.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/PKG-INFO" afterPath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/PKG-INFO" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/SOURCES.txt" afterPath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/SOURCES.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/dependency_links.txt" afterPath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/dependency_links.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/requires.txt" afterPath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/requires.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/top_level.txt" afterPath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/top_level.txt" />
+    <list default="true" id="7965b650-15d6-43f0-9b52-27c1f78b96e2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/start.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/currency.pickle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/etf.pickle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/future.pickle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/index.pickle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/mutualfund.pickle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/stocks.pickle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env_config.pickle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env_setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/install.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/CHANGELOG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/COPYRIGHT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/DEVELOPMENT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/abstract.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/doc_index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/cycle_indicators.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/math_operators.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/math_transform.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/momentum_indicators.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/overlap_studies.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/pattern_recognition.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/price_transform.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/statistic_functions.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/volatility_indicators.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/volume_indicators.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/funcs.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/generate_html_pages.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/install.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/requirements.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/requirements_dev.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/requirements_test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/_abstract.pxi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/_common.pxi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/_func.pxi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/_stream.pxi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/_ta_lib.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/_ta_lib.pxd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/_ta_lib.pyx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/abstract.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/common.pxd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/deprecated.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/stream.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/test_abstract.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/test_data.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/test_func.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/test_stream.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/tools/build_talib_from_source.bash" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/tools/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/tools/generate_func.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/tools/generate_stream.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/tools/perf_talib.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_processing/Data_processing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/price_quoting/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/price_quoting/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/price_quoting/MANIFEST.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/price_quoting/README.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/price_quoting/requirements.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/price_quoting/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/price_quoting/test/test_yahoo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/price_quoting/yahoo_finance/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/price_quoting/yahoo_finance/yql.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/TickerDownloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/SOURCES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/dependency_links.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/requires.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/Symbol.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/SymbolDownloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/downloader/CurrencyDownloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/downloader/ETFDownloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/downloader/FutureDownloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/downloader/IndexDownloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/downloader/MutualFundDownloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/downloader/StockDownloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/downloader/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/symbols/Currency.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/symbols/ETF.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/symbols/Future.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/symbols/Index.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/symbols/MutualFund.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/symbols/Stock.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/symbols/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/scripts-2.7/TickerDownloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/scripts-3.6/YahooTickerDownloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/dist/Yahoo_ticker_downloader-0.0.0-py2.7.egg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/dist/Yahoo_ticker_downloader-2.1.1-py3.6.egg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/Symbol.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/SymbolDownloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/downloader/CurrencyDownloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/downloader/ETFDownloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/downloader/FutureDownloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/downloader/IndexDownloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/downloader/MutualFundDownloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/downloader/StockDownloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/downloader/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/symbols/Currency.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/symbols/ETF.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/symbols/Future.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/symbols/Index.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/symbols/MutualFund.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/symbols/Stock.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/symbols/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/StockAnalyzer.iml" afterPath="$PROJECT_DIR$/.idea/StockAnalyzer.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_preload.py" afterPath="$PROJECT_DIR$/data_preload.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,45 +133,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/StockAnalyzer$Data_processing.coverage" NAME="Data_processing Coverage Results" MODIFIED="1504107519080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/data_processing" />
-    <SUITE FILE_PATH="coverage/StockAnalyzer$install.coverage" NAME="install Coverage Results" MODIFIED="1504107230829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/StockAnalyzer$TickerDownloader.coverage" NAME="TickerDownloader Coverage Results" MODIFIED="1504107899476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/ticker_download" />
+    <SUITE FILE_PATH="coverage/StockAnalyzer$start.coverage" NAME="start Coverage Results" MODIFIED="1505221412454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="install.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/install.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TickerDownloader.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ticker_download/TickerDownloader.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-              <folding>
-                <element signature="e#23#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Data_processing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data_processing/Data_processing.py">
+        <entry file="file://$PROJECT_DIR$/Data_processing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="731">
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="61" selection-end-column="48" />
               <folding>
                 <element signature="e#14#32#0" expanded="true" />
               </folding>
@@ -64,19 +153,59 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="env_setup.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/env_setup.py">
+      <file leaf-file-name="start.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/start.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="11" lean-forward="false" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="374">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stock.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ticker_downloader/symbols/Stock.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SymbolDownloader.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ticker_downloader/SymbolDownloader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>pickle</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,7 +213,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/data_processing/Data_processing.py" />
+        <option value="$PROJECT_DIR$/tickerdownloader/TickerDownloader.py" />
+        <option value="$PROJECT_DIR$/tickerdownloader/SymbolDownloader.py" />
+        <option value="$PROJECT_DIR$/tickerdownloader/symbols/Stock.py" />
+        <option value="$PROJECT_DIR$/config.json" />
+        <option value="$PROJECT_DIR$/start.py" />
+        <option value="$PROJECT_DIR$/ticker_downloader/SymbolDownloader.py" />
+        <option value="$PROJECT_DIR$/ticker_downloader/symbols/Stock.py" />
       </list>
     </option>
   </component>
@@ -115,6 +250,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -137,11 +273,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ticker_download" />
+              <option name="myItemId" value="ticker_downloader" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -155,15 +287,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="ticker_downloader" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ticker_download" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ytd" />
+              <option name="myItemId" value="symbols" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -177,7 +305,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="project_data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -191,27 +319,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data_processing" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
-  <component name="RunManager" selected="Python.TickerDownloader">
-    <configuration default="false" name="install" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.start">
+    <configuration default="false" name="start" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -224,44 +347,8 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="StockAnalyzer" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/install.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Data_processing" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/data_processing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="StockAnalyzer" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/data_processing/Data_processing.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TickerDownloader" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/ticker_download" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="StockAnalyzer" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/ticker_download/TickerDownloader.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/start.py" />
+      <option name="PARAMETERS" value="stocks" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
@@ -354,6 +441,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -473,16 +566,12 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Python.install" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Data_processing" />
-      <item index="2" class="java.lang.String" itemvalue="Python.TickerDownloader" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.start" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.TickerDownloader" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Data_processing" />
-        <item index="2" class="java.lang.String" itemvalue="Python.install" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.start" />
       </list>
     </recent_temporary>
   </component>
@@ -491,35 +580,35 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="97d53a37-d6ad-41ce-be00-5c72868723b9" name="Default" comment="" />
-      <created>1504103987513</created>
+      <changelist id="7965b650-15d6-43f0-9b52-27c1f78b96e2" name="Default" comment="" />
+      <created>1505037754991</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1504103987513</updated>
+      <updated>1505037754991</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24010417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -534,43 +623,150 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/env_setup.py">
+    <entry file="file://$PROJECT_DIR$/Data_processing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="11" lean-forward="false" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_processing/Data_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="816">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="61" selection-end-column="48" />
           <folding>
             <element signature="e#14#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/install.py">
+    <entry file="file://$PROJECT_DIR$/start.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="43" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ticker_downloader/symbols/Stock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ticker_downloader/SymbolDownloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="61" selection-end-column="48" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#14#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ticker_download/TickerDownloader.py">
+    <entry file="file://$PROJECT_DIR$/start.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
           <folding>
-            <element signature="e#23#36#0" expanded="true" />
+            <element signature="e#14#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_preload.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickerdownloader/SymbolDownloader.py" />
+    <entry file="file://$PROJECT_DIR$/tickerdownloader/symbols/Stock.py" />
+    <entry file="file://$PROJECT_DIR$/tickerdownloader/TickerDownloader.py" />
+    <entry file="file://$PROJECT_DIR$/tickerdownloader/symbols/Stock.py" />
+    <entry file="file://$PROJECT_DIR$/tickerdownloader/SymbolDownloader.py" />
+    <entry file="file://$PROJECT_DIR$/data_preload.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="61" selection-end-column="48" />
+          <folding>
+            <element signature="e#14#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ticker_downloader/SymbolDownloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ticker_downloader/symbols/Stock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
