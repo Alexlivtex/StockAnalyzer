@@ -6,7 +6,6 @@ import argparse
 import io
 from pathlib import Path
 import os
-import pandas as pd
 import numpy as np
 
 from ticker_downloader.downloader.StockDownloader import StockDownloader
@@ -21,8 +20,14 @@ from ticker_downloader.compat import csv
 import tablib
 import quandl
 
+import pandas as pd
+import pandas_datareader.data as web
+import datetime as dt
+
+quandl.ApiConfig.api_key = "_ns3bHxUkWyvcD2JknyL"
 import sys
 
+date_range = ["2006-01-01", "2017-01-01"]
 stock_list = []
 
 options = {
@@ -162,12 +167,12 @@ def main():
         with open((os.path.join(PATH, downloader.type + '.json')), 'wb') as f:
             f.write(data.json.encode('UTF-8'))
 
-        with open((os.path.join(PATH,downloader.type + '.yaml')), 'wb') as f:
+        with open((os.path.join(PATH, downloader.type + '.yaml')), 'wb') as f:
             f.write(data.yaml.encode('UTF-8'))
 
 
 def load_csv_data(path):
-    if path.exists() and path.is_file():
+    if Path(path).exists() and Path(path).is_file():
         print("File exists!")
         data = pd.read_csv(path)
         return data
@@ -185,7 +190,8 @@ def obtain_data():
     stock_list.extend(np.array(stock_data["Ticker"]).tolist())
 
     price_details_path = os.path.join("data", "Complete_data", "stocks")
-    if not price_details_path.exists():
+    error_list = []
+    if not Path(price_details_path).exists():
         os.mkdir(price_details_path)
     for item in stock_list:
         stock_quote_file = os.path.join(price_details_path, item + ".csv")
@@ -195,9 +201,21 @@ def obtain_data():
                mydata = quandl.get("WIKI" + "/" + item, start_date=date_range[0], end_date=date_range[1])
                mydata.to_csv(stock_quote_file)
             except:
-                print("Get data failed for %s"%("WIKI" + "/" + item))
+                start = dt.datetime(2006,1, 1)
+                end = dt.datetime(2017,1,1)
+                try:
+                    df = web.DataReader(item, 'yahoo', start, end)
+                    df.to_csv(stock_quote_file)
+                except:
+                    error_list.append(item)
+                    print("Get data failed for %s"%("WIKI" + "/" + item))
         else:
             print("%s already exists!\n"%(item))
+    f = open(os.path.join("project_data", "result_list"), "w")
+    for error_item in error_list:
+        f.writelines(error_item)
+    f.close()
+
 if __name__ == "__main__":
     main()
     obtain_data()
