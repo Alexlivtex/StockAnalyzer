@@ -24,7 +24,7 @@ import pandas as pd
 import pandas_datareader.data as web
 import datetime as dt
 
-quandl.ApiConfig.api_key = "_ns3bHxUkWyvcD2JknyL"
+#quandl.ApiConfig.api_key = "_ns3bHxUkWyvcD2JknyL"
 import sys
 
 date_range = ["2006-01-01", "2017-01-01"]
@@ -40,6 +40,12 @@ options = {
 }
 
 PATH = "project_data"
+
+class ContentEmptyError(Exception):
+    def __init__(self, value):
+        self.value = value
+    def __str__(self):
+        return repr(self.value)
 
 def loadDownloader(tickerType):
     with open((os.path.join(PATH, tickerType + ".pickle")), "rb") as f:
@@ -198,17 +204,26 @@ def obtain_data():
         if not Path(stock_quote_file).exists():
             print("WIKI" + "/" + item)
             try:
-               mydata = quandl.get("WIKI" + "/" + item, start_date=date_range[0], end_date=date_range[1])
+               if len(item.split(".")) > 0:
+                   mydata = quandl.get("WIKI" + "/" + item.replace(".", "_"), start_date=date_range[0], end_date=date_range[1])
+               else:
+                   mydata = quandl.get("WIKI" + "/" + item, start_date=date_range[0], end_date=date_range[1])
+
+               if len(df["Date"]) == 0:
+                   raise ContentEmptyError("{}".format(item))
                mydata.to_csv(stock_quote_file)
             except:
                 start = dt.datetime(2006,1, 1)
                 end = dt.datetime(2017,1,1)
                 try:
-                    df = web.DataReader(item, 'yahoo', start, end)
+                    if len(item.split(".")) > 0:
+                        df = web.DataReader(item.replace(".", "-"), 'yahoo', start, end)
+                    else:
+                        df = web.DataReader(item, 'yahoo', start, end)
                     df.to_csv(stock_quote_file)
                 except:
                     error_list.append(item)
-                    print("Get data failed for %s"%("WIKI" + "/" + item))
+                    print("Get data failed for %s"%(item))
         else:
             print("%s already exists!\n"%(item))
     f = open(os.path.join("project_data", "result_list"), "w")
