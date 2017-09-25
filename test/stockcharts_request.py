@@ -18,15 +18,23 @@ elem.send_keys("pycon")
 elem.send_keys(Keys.RETURN)
 print(driver.page_source)
 '''
-ticker_list = ["AAPL", "BABA", "FB"]
+
+class ContentEmptyError(Exception):
+    def __init__(self, value):
+        self.value = value
+    def __str__(self):
+        return repr(self.value)
+
+
+ticker_list = ["AAPL", "DFADFADSF","BABA", "FB"]
 
 def main():
     driver = webdriver.Firefox()
     driver.get("https://stockcharts.com/scripts/php/dblogin.php")
     elem_username = driver.find_element_by_name("form_UserID")
     elem_password = driver.find_element_by_name("form_UserPassword")
-    elem_username.send_keys("XXXXXXXXX@XX.com")
-    elem_password.send_keys("XXXXXXXXX")
+    elem_username.send_keys("xxxxxxxxx@xx.com")
+    elem_password.send_keys("xxxxxxxxxxx")
     elem_password.send_keys(Keys.RETURN)
     time.sleep(10)
     for ticker_item in ticker_list:
@@ -40,6 +48,8 @@ def main():
             price_table = soup.find("div", {"class" : "historical-data-descrip"})
             price_content = price_table.findAll("pre")
             data_table = price_content[0].text
+            if data_table.split(" ")[2] == "not":
+                raise ContentEmptyError("{}".format(ticker_item))
             data_table = data_table[3:-1]
             f = open("{}.txt".format(ticker_item), "w")
             f.write(data_table)
