@@ -2,128 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7965b650-15d6-43f0-9b52-27c1f78b96e2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/start.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/currency.pickle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/etf.pickle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/future.pickle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/index.pickle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/mutualfund.pickle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/stocks.pickle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/env_config.pickle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/env_setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/install.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/AUTHORS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/CHANGELOG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/COPYRIGHT" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/DEVELOPMENT" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/abstract.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/doc_index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/cycle_indicators.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/math_operators.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/math_transform.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/momentum_indicators.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/overlap_studies.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/pattern_recognition.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/price_transform.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/statistic_functions.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/volatility_indicators.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/func_groups/volume_indicators.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/funcs.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/generate_html_pages.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/docs/install.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/requirements.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/requirements_dev.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/requirements_test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/_abstract.pxi" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/_common.pxi" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/_func.pxi" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/_stream.pxi" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/_ta_lib.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/_ta_lib.pxd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/_ta_lib.pyx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/abstract.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/common.pxd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/deprecated.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/stream.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/test_abstract.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/test_data.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/test_func.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/talib/test_stream.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/tools/build_talib_from_source.bash" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/tools/example.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/tools/generate_func.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/tools/generate_stream.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_obtain/tools/perf_talib.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data_processing/Data_processing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/price_quoting/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/price_quoting/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/price_quoting/MANIFEST.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/price_quoting/README.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/price_quoting/requirements.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/price_quoting/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/price_quoting/test/test_yahoo.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/price_quoting/yahoo_finance/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/price_quoting/yahoo_finance/yql.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/TickerDownloader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/PKG-INFO" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/SOURCES.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/dependency_links.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/requires.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/Yahoo_ticker_downloader.egg-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/Symbol.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/SymbolDownloader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/compat.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/downloader/CurrencyDownloader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/downloader/ETFDownloader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/downloader/FutureDownloader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/downloader/IndexDownloader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/downloader/MutualFundDownloader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/downloader/StockDownloader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/downloader/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/symbols/Currency.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/symbols/ETF.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/symbols/Future.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/symbols/Index.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/symbols/MutualFund.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/symbols/Stock.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/lib/ytd/symbols/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/scripts-2.7/TickerDownloader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/build/scripts-3.6/YahooTickerDownloader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/dist/Yahoo_ticker_downloader-0.0.0-py2.7.egg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/dist/Yahoo_ticker_downloader-2.1.1-py3.6.egg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/Symbol.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/SymbolDownloader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/compat.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/downloader/CurrencyDownloader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/downloader/ETFDownloader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/downloader/FutureDownloader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/downloader/IndexDownloader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/downloader/MutualFundDownloader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/downloader/StockDownloader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/downloader/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/symbols/Currency.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/symbols/ETF.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/symbols/Future.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/symbols/Index.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/symbols/MutualFund.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/symbols/Stock.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ticker_download/ytd/symbols/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/StockAnalyzer.iml" afterPath="$PROJECT_DIR$/.idea/StockAnalyzer.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utility/check_data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utility/data_download.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utility/data_obtain.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utility/run_time_limit.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Complete_data/stocks/SPEC" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/CHANGELOG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/COPYRIGHT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/DEVELOPMENT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/docs/abstract.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/docs/doc_index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/docs/func.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/docs/func_groups/cycle_indicators.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/docs/func_groups/math_operators.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/docs/func_groups/math_transform.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/docs/func_groups/momentum_indicators.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/docs/func_groups/overlap_studies.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/docs/func_groups/pattern_recognition.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/docs/func_groups/price_transform.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/docs/func_groups/statistic_functions.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/docs/func_groups/volatility_indicators.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/docs/func_groups/volume_indicators.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/docs/funcs.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/docs/generate_html_pages.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/docs/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/docs/install.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/requirements.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/requirements_dev.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/requirements_test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/talib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/talib/_abstract.pxi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/talib/_common.pxi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/talib/_func.pxi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/talib/_stream.pxi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/talib/_ta_lib.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/talib/_ta_lib.pxd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/talib/_ta_lib.pyx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/talib/abstract.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/talib/common.pxd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/talib/deprecated.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/talib/stream.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/talib/test_abstract.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/talib/test_data.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/talib/test_func.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/talib/test_stream.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/tools/build_talib_from_source.bash" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/tools/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/tools/generate_func.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/tools/generate_stream.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_obtain/tools/perf_talib.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project_data/stocks.pickle" afterPath="$PROJECT_DIR$/project_data/stocks.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_preload.py" afterPath="$PROJECT_DIR$/data_preload.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.json" afterPath="$PROJECT_DIR$/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/start.py" afterPath="$PROJECT_DIR$/start.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -133,7 +69,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/StockAnalyzer$start.coverage" NAME="start Coverage Results" MODIFIED="1505221412454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/StockAnalyzer$SP_500_obtain.coverage" NAME="SP&amp;500_obtain Coverage Results" MODIFIED="1506103402378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utility" />
+    <SUITE FILE_PATH="coverage/StockAnalyzer$start.coverage" NAME="start Coverage Results" MODIFIED="1506270297272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -141,43 +78,43 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Data_processing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data_processing.py">
+      <file leaf-file-name="start.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/start.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="61" selection-end-column="48" />
+            <state relative-caret-position="2550">
+              <caret line="175" column="22" lean-forward="false" selection-start-line="175" selection-start-column="22" selection-end-line="175" selection-end-column="22" />
               <folding>
-                <element signature="e#14#32#0" expanded="true" />
+                <element signature="e#23#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/start.py">
+      <file leaf-file-name="run_time_limit.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utility/run_time_limit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stock.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ticker_downloader/symbols/Stock.py">
+      <file leaf-file-name="SP500_obtain.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utility/SP500_obtain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+            <state relative-caret-position="442">
+              <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SymbolDownloader.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ticker_downloader/SymbolDownloader.py">
+      <file leaf-file-name="error_list" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project_data/error_list">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="204">
+              <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -186,9 +123,65 @@
       <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+            <state relative-caret-position="85">
+              <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="check_data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utility/check_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="25" column="33" lean-forward="false" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_obtain.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utility/data_obtain.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_download.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utility/data_download.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="19" lean-forward="false" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Python36/Lib/site-packages/pandas_datareader/data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="63" column="35" lean-forward="false" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_obtain_sp_500.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_obtain_sp_500.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -216,10 +209,15 @@
         <option value="$PROJECT_DIR$/tickerdownloader/TickerDownloader.py" />
         <option value="$PROJECT_DIR$/tickerdownloader/SymbolDownloader.py" />
         <option value="$PROJECT_DIR$/tickerdownloader/symbols/Stock.py" />
-        <option value="$PROJECT_DIR$/config.json" />
-        <option value="$PROJECT_DIR$/start.py" />
         <option value="$PROJECT_DIR$/ticker_downloader/SymbolDownloader.py" />
         <option value="$PROJECT_DIR$/ticker_downloader/symbols/Stock.py" />
+        <option value="$PROJECT_DIR$/utility/SP&amp;500_obtain.py" />
+        <option value="$PROJECT_DIR$/utility/check_data.py" />
+        <option value="$PROJECT_DIR$/config.json" />
+        <option value="$PROJECT_DIR$/utility/run_time_limit.py" />
+        <option value="$PROJECT_DIR$/start.py" />
+        <option value="$PROJECT_DIR$/utility/data_obtain.py" />
+        <option value="$PROJECT_DIR$/utility/data_download.py" />
       </list>
     </option>
   </component>
@@ -250,7 +248,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -273,63 +270,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ticker_downloader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StockAnalyzer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StockAnalyzer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ticker_downloader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symbols" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StockAnalyzer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StockAnalyzer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project_data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StockAnalyzer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StockAnalyzer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
+              <option name="myItemId" value="utility" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
@@ -349,6 +301,24 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/start.py" />
       <option name="PARAMETERS" value="stocks" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SP&amp;500_obtain" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utility" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="StockAnalyzer" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utility/SP&amp;500_obtain.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
@@ -566,12 +536,14 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.start" />
+      <item index="1" class="java.lang.String" itemvalue="Python.SP&amp;500_obtain" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Python.start" />
+        <item index="1" class="java.lang.String" itemvalue="Python.SP&amp;500_obtain" />
       </list>
     </recent_temporary>
   </component>
@@ -592,24 +564,24 @@
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25989583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -623,12 +595,76 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Data_processing.py">
+    <entry file="file://$PROJECT_DIR$/utility/data_download.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="61" selection-end-column="48" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#32#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python36/Lib/site-packages/pandas_datareader/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="63" column="35" lean-forward="false" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_obtain_sp_500.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2788">
+          <caret line="164" column="0" lean-forward="true" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utility/check_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="33" lean-forward="false" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utility/data_obtain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_obtain_sp_500.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -637,7 +673,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utility/data_obtain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_obtain_sp_500.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="81" column="16" lean-forward="false" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utility/SP&amp;500_obtain.py" />
+    <entry file="file://$PROJECT_DIR$/Data_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="61" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -645,7 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -653,7 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -661,7 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -669,9 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="61" selection-end-column="48" />
-          <folding>
-            <element signature="e#14#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -679,7 +757,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#23#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ticker_downloader/symbols/Stock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ticker_downloader/SymbolDownloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -687,7 +781,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="61" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -695,9 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding>
-            <element signature="e#14#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -712,7 +826,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#23#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -728,29 +844,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="61" selection-end-column="48" />
-          <folding>
-            <element signature="e#14#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ticker_downloader/SymbolDownloader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -758,15 +855,116 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="755">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ticker_downloader/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ticker_downloader/compat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utility/SP&amp;500_obtain.py" />
+    <entry file="file://$PROJECT_DIR$/test/test_obtain_sp_500.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_data/error_list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utility/SP500_obtain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utility/run_time_limit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/start.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="2550">
+          <caret line="175" column="22" lean-forward="false" selection-start-line="175" selection-start-column="22" selection-end-line="175" selection-end-column="22" />
+          <folding>
+            <element signature="e#23#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python36/Lib/site-packages/pandas_datareader/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="63" column="35" lean-forward="false" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utility/check_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="33" lean-forward="false" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utility/data_obtain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utility/data_download.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="19" lean-forward="false" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
