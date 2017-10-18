@@ -1,4 +1,3 @@
-
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -13,14 +12,28 @@ finished_list = []
 finished = "finished.pickle"
 
 
-def download_file(url, file_name):
+def as_num(x):
+    y='{:.5f}'.format(x)
+    return(y)
+
+def download_file(url, file_name, ori_name):
     global finished_list
     r = requests.get(url, stream=True)
+    total_size = requests.head(url).headers['content-length']
+    current_download_index = 0
     with open(file_name, "wb") as f:
         for chunk in r.iter_content(chunk_size=1024):
             if chunk:
                 f.write(chunk)
-    finished_list.append(file_name)
+                current_download_index += 1
+                if current_download_index % (1024*5) == 0:
+                    download_percent = (current_download_index * 1024) / float(total_size)
+                    print("{} has already downloaded {}".format(ori_name, str(download_percent * 100)[:6] + "%"))
+    print("{} has already downloaded {}".format(ori_name, str(100) + "%"))
+    print(current_download_index)
+    print(total_size)
+    if not file_name in finished_list:
+        finished_list.append(file_name)
     f_pickle = open(finished, "wb")
     pickle.dump(finished_list, f_pickle)
     f_pickle.close()
@@ -57,6 +70,7 @@ def start_extract():
             video_link = soup.find_all("source")[0]["src"]
             print(video_link)
             file_name = link_item.get_attribute("href").split("/")[-2] + ".mp4"
+            originan_name = file_name
             url = video_link[:-4]
             original_file_name = url.split("/")[-1]
             original_file_name = original_file_name.split(".")[0]
@@ -68,12 +82,13 @@ def start_extract():
             file_name = os.path.join(folder_path, file_name)
             print(file_name)
             print(url)
-            if file_name in finished_list:
-                print("{} has already exsited".format(file_name))
+            if file_name in finished_list and os.path.exists(file_name):
+                print("{} has already exsited".format(originan_name))
                 continue
             try:
-                download_file(url, file_name)
+                download_file(url, file_name, originan_name)
             except:
-                shutil.rmtree(file_name)
+                print("{} download has some error, skip it!".format(originan_name))
+                continue
 
 start_extract()
