@@ -5,7 +5,9 @@ from time import sleep
 import argparse
 import io
 import os
-import json
+import pandas as pd
+import numpy as np
+import math
 
 from ticker_downloader.downloader.StockDownloader import StockDownloader
 from ticker_downloader.downloader.ETFDownloader import ETFDownloader
@@ -16,16 +18,11 @@ from ticker_downloader.downloader.CurrencyDownloader import CurrencyDownloader
 from ticker_downloader.compat import text
 from ticker_downloader.compat import csv
 
-from utility.data_obtain import complete_obtain_data
+from utility.stockcharts_obtain import grab_data_from_stockcharts
 from utility.SP500_obtain import obtain_sp_data
-from utility.check_data import check_data
-from utility.run_time_limit import timelimit
+import threading
 
 import tablib
-import quandl
-
-
-import sys
 
 options = {
     "stocks": StockDownloader(),
@@ -167,12 +164,56 @@ def main():
         with open((os.path.join(PATH, downloader.type + '.yaml')), 'wb') as f:
             f.write(data.yaml.encode('UTF-8'))
 
+def list_chunks(ticker_list, sub_count):
+    for i in range(0, len(ticker_list), sub_count):
+        yield ticker_list[i:i + sub_count]
+
 if __name__ == "__main__":
+    complete_data_path = os.path.join("data", "Complete_data", "stocks")
+    training_data_path = os.path.join("data", "Training_data", "Stocks", "SP_500_data")
+    stock_list = []
+    sp_500_list = []
+
+    threads_complte = []
+    threads_sp500 = []
+    max_thread_count = 5
+
+    # Check the stock ticker
     main()
-    f_json = open("config.json", "r")
-    settings = json.load(f_json)
-    retry_count = settings["retry-count"]
-    for index in range(int(retry_count)):
-        complete_obtain_data()
-        obtain_sp_data()
-        check_data()
+
+    # Get all the stock data and store it local
+    stock_data = pd.read_csv(os.path.join("project_data", "stocks.csv"))
+    stock_data = stock_data.loc[stock_data["Exchange"].isin(['NYQ', 'NMS'])]
+    print(stock_data["Ticker"])
+    print(np.array(stock_data["Ticker"]))
+    print(np.array(stock_data["Ticker"]).tolist())
+    stock_list.extend(np.array(stock_data["Ticker"]).tolist())
+    final_list_complete = list(list_chunks(stock_list, math.ceil(len(stock_list) / max_thread_count)))
+    for i in range(max_thread_count):
+        threads_complte.append(threading.Thread(target=grab_data_from_stockcharts, args=(complete_data_path, final_list_complete[i])))
+        #grab_data_from_stockcharts(complete_data_path, stock_list)
+
+    for t in threads_complte:
+        t.setDaemon(True)
+        sleep(10)
+        t.start()
+
+    for thread_index in threads_complte:
+        thread_index.join()
+
+    # Downloading the SP&500 data
+    obtain_sp_data()
+    f_SP_500 = open(os.path.join("project_data", "sp&500_tickle.pickle"), "rb")
+    sp_500_list = pickle.load(f_SP_500)
+    final_list_sp500 = list(list_chunks(sp_500_list, math.ceil(len(sp_500_list) / max_thread_count)))
+
+    for i in range(max_thread_count):
+        threads_sp500.append(threading.Thread(target=grab_data_from_stockcharts, args=(training_data_path, final_list_sp500[i])))
+
+    for t_sp in threads_sp500:
+        t_sp.setDaemon(True)
+        sleep(10)
+        t_sp.start()
+
+    for thread_index_sp in threads_sp500:
+        thread_index_sp.join()
