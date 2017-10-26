@@ -45,6 +45,12 @@ def download_file(url, file_name, ori_name):
 def start_extract(update=True):
     global finished_list
     global total_list
+
+    if os.path.exists(finished):
+        f_pickle = open(finished, "rb")
+        finished_list = pickle.load(f_pickle)
+        f_pickle.close()
+
     if update is True:
         driver = webdriver.Firefox()
         driver.get("https://www.learningmarkets.com/strategy-sessions/")
@@ -62,11 +68,6 @@ def start_extract(update=True):
         link_list = driver.find_elements_by_tag_name("a")
         if not os.path.exists(folder_path):
             os.mkdir(folder_path)
-
-        if os.path.exists(finished):
-            f_pickle = open(finished, "rb")
-            finished_list = pickle.load(f_pickle)
-            f_pickle.close()
 
         for link_item in link_list:
             if link_item.text == "view":
@@ -87,9 +88,6 @@ def start_extract(update=True):
                 file_name = os.path.join(folder_path, file_name)
                 print(file_name)
                 print(url)
-                if file_name in finished_list and os.path.exists(file_name):
-                    print("{} has already exsited".format(originan_name))
-                    continue
                 try:
                     #download_file(url, file_name, originan_name)
                     total_list[url] = [file_name, originan_name]
@@ -106,6 +104,11 @@ def start_extract(update=True):
         total_list = pickle.load(f_total)
         f_total.close()
         for total_dic_index in total_list:
-            download_file(total_dic_index, total_list[total_dic_index][0], total_list[total_dic_index][1])
+            file_name = total_list[total_dic_index][0]
+            originan_name = total_list[total_dic_index][1]
+            if file_name in finished_list and os.path.exists(file_name):
+                print("{} has already exsited".format(originan_name))
+                continue
+            download_file(total_dic_index, file_name, originan_name)
 
-start_extract()
+start_extract(False)
